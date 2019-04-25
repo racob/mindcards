@@ -15,6 +15,7 @@
 		5831BDDB2266F1BE0021F6E3 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831BDDA2266F1BE0021F6E3 /* CardModel.swift */; };
 		5831BDDD2266F3E90021F6E3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831BDDC2266F3E90021F6E3 /* Card.swift */; };
 		5831BDDF226708DE0021F6E3 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831BDDE226708DE0021F6E3 /* CardCollectionViewCell.swift */; };
+		586BD47C22705C740068CF1C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BD47B22705C740068CF1C /* HomeViewController.swift */; };
 		58F03851226AF008003E0D69 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 58F0384D226AF008003E0D69 /* cardflip.wav */; };
 		58F03852226AF008003E0D69 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 58F0384E226AF008003E0D69 /* shuffle.wav */; };
 		58F03853226AF008003E0D69 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 58F0384F226AF008003E0D69 /* dingcorrect.wav */; };
@@ -34,6 +35,7 @@
 		5831BDDA2266F1BE0021F6E3 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		5831BDDC2266F3E90021F6E3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		5831BDDE226708DE0021F6E3 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		586BD47B22705C740068CF1C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		58F0384D226AF008003E0D69 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
 		58F0384E226AF008003E0D69 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
 		58F0384F226AF008003E0D69 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				58F0384C226AEFCD003E0D69 /* Sounds */,
 				5831BDC82266D98C0021F6E3 /* AppDelegate.swift */,
 				5831BDCA2266D98C0021F6E3 /* ViewController.swift */,
+				586BD47B22705C740068CF1C /* HomeViewController.swift */,
 				5831BDDA2266F1BE0021F6E3 /* CardModel.swift */,
 				5831BDDC2266F3E90021F6E3 /* Card.swift */,
 				5831BDDE226708DE0021F6E3 /* CardCollectionViewCell.swift */,
@@ -188,6 +191,7 @@
 				5831BDDB2266F1BE0021F6E3 /* CardModel.swift in Sources */,
 				5831BDDF226708DE0021F6E3 /* CardCollectionViewCell.swift in Sources */,
 				5831BDDD2266F3E90021F6E3 /* Card.swift in Sources */,
+				586BD47C22705C740068CF1C /* HomeViewController.swift in Sources */,
 				58F03859226AF0CE003E0D69 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

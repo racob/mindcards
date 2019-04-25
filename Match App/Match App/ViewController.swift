@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
+    var finalPlayerName = ""
+    
+    @IBOutlet weak var playerNameLabel: UILabel!
+    
     @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var cardNameLabel: UILabel!
@@ -28,6 +32,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // Load the Player's name from the home screen
+        playerNameLabel.text = finalPlayerName
         
         // Call the getCards method of the card model
         cardArray = model.getCards()
