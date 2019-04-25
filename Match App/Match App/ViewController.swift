@@ -34,7 +34,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view.
         
         // Load the Player's name from the home screen
-        //playerNameLabel.text = finalPlayerName
+        playerNameLabel.text = finalPlayerName
         
         // Call the getCards method of the card model
         cardArray = model.getCards()

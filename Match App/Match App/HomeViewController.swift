@@ -20,8 +20,8 @@ class HomeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let x = segue.destination as! ViewController
-        x.finalPlayerName = self.nameOfPlayer
+        let x = segue.destination as? ViewController
+        x?.finalPlayerName = self.nameOfPlayer
     }
     
     override func viewDidLoad() {

@@ -24,22 +24,22 @@ class Card {
             return "Cendol"
             
         case "card3":
-            return "Sate Padang"
+            return "Pindang Patin"
             
         case "card4":
-            return "Putu"
-        
+            return "Bakso Malang"
+            
         case "card5":
             return "Sate Ayam"
             
         case "card6":
-            return "Kue Putu"
+            return "Nasi Tumpeng"
             
         case "card7":
-            return "Pempek"
+            return "Bika Ambon"
             
         case "card8":
-            return "Es Doger"
+            return "Nasi Campur Pontianak"
             
         case "card9":
             return "Otak-Otak"
@@ -56,9 +56,15 @@ class Card {
         case "card13":
             return "Nasi Campur Bali"
             
+        case "card14":
+            return "Bakwan Jagung"
+            
+        case "card15":
+            return "Martabak Manis"
+            
         default:
             return "-"
         }
-    
+        
     }
 }
