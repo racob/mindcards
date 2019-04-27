@@ -54,7 +54,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidAppear(_ animated: Bool) {
         
         SoundManager.playSound(.shuffle)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -214,18 +213,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         firstFlippedCardIndex = nil
     }
     
-    func checkGameEnded() {
+    func checkGameEnded() -> Bool{
         
         // Determine if there are any cards unmatched
         var isWon = true
         
         for card in cardArray {
-            
             if card.isMatched == false {
                 isWon = false
                 break
             }
         }
+        
+        //sleep(2)
         
         // Messaging variables
         var title = ""
@@ -245,7 +245,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             // If there are unmatched cards, check if the time already 600 seconds or 10 minutes
             
             if milliseconds < 600000 {
-                return
+                return false
             }
             
             title = "Game Over"
@@ -254,7 +254,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         // Show won/lost messaging
-        showAlert(title, message)
+        //showAlert(title, message)
+        return true
+        //performSegue(withIdentifier: "win", sender: self)
     }
     
     func showAlert(_ title:String, _ message:String) {
@@ -267,6 +269,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         present(alert, animated: true, completion: nil)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as? winViewController
+        vc?.playerName = finalPlayerName
+        vc?.time = timerLabel.text!
+    }
 
 } // End ViewController class
 

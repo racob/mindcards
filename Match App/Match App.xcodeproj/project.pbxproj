@@ -22,6 +22,7 @@
 		58F03854226AF008003E0D69 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 58F03850226AF008003E0D69 /* dingwrong.wav */; };
 		58F03857226AF089003E0D69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F03856226AF089003E0D69 /* AVFoundation.framework */; };
 		58F03859226AF0CE003E0D69 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F03858226AF0CE003E0D69 /* SoundManager.swift */; };
+		F726F19B2272EF43000C7F03 /* winViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F726F19A2272EF43000C7F03 /* winViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		58F03850226AF008003E0D69 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
 		58F03856226AF089003E0D69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		58F03858226AF0CE003E0D69 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		F726F19A2272EF43000C7F03 /* winViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = winViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				5831BDCA2266D98C0021F6E3 /* ViewController.swift */,
 				586BD47B22705C740068CF1C /* HomeViewController.swift */,
 				5831BDDA2266F1BE0021F6E3 /* CardModel.swift */,
+				F726F19A2272EF43000C7F03 /* winViewController.swift */,
 				5831BDDC2266F3E90021F6E3 /* Card.swift */,
 				5831BDDE226708DE0021F6E3 /* CardCollectionViewCell.swift */,
 				58F03858226AF0CE003E0D69 /* SoundManager.swift */,
@@ -193,6 +196,7 @@
 				5831BDDD2266F3E90021F6E3 /* Card.swift in Sources */,
 				586BD47C22705C740068CF1C /* HomeViewController.swift in Sources */,
 				58F03859226AF0CE003E0D69 /* SoundManager.swift in Sources */,
+				F726F19B2272EF43000C7F03 /* winViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

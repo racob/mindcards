@@ -64,7 +64,7 @@
                     </view>
                     <connections>
                         <outlet property="playerNameField" destination="o6S-gP-jLq" id="6kt-rS-7vd"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="playerName" id="8a3-RR-HIy"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="playerName" id="nVV-Uc-dWi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mzl-Qb-J4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -176,11 +176,68 @@
                         <outlet property="collectionView" destination="2l4-3V-zRb" id="LVl-0d-SWx"/>
                         <outlet property="playerNameLabel" destination="s30-9f-Bj9" id="54f-I0-n56"/>
                         <outlet property="timerLabel" destination="4Jy-YP-mkU" id="YJg-kv-fK0"/>
+                        <segue destination="agv-DL-Dmb" kind="presentation" identifier="win" id="wSO-yB-Hiu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="58" y="42"/>
+        </scene>
+        <!--Win View Controller-->
+        <scene sceneID="qAV-ql-nCa">
+            <objects>
+                <viewController id="agv-DL-Dmb" customClass="winViewController" customModule="Match_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vYE-BO-GwK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations, You Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibx-FS-wqM">
+                                <rect key="frame" x="38" y="160" width="338" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxj-Cy-izj">
+                                <rect key="frame" x="20" y="671" width="374" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.81176470590000005" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Return">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnButton:" destination="agv-DL-Dmb" eventType="touchUpInside" id="vul-91-EZF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="680-SV-G1B">
+                                <rect key="frame" x="160" y="353" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSz-JU-m9Q">
+                                <rect key="frame" x="134" y="400" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="deR-cO-1CB"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerNameLabel" destination="680-SV-G1B" id="SqW-Un-SAe"/>
+                        <outlet property="returnButton" destination="Vxj-Cy-izj" id="5Za-Qz-Ki4"/>
+                        <outlet property="timeLabel" destination="pSz-JU-m9Q" id="Doh-mb-Agn"/>
+                        <segue destination="nTH-9L-w9q" kind="presentation" identifier="home" id="0l9-8o-R1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWj-DB-f4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.89855072463774" y="41.517857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vIN-xi-K2y">
@@ -197,7 +254,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Fpe-9s-gyl"/>
+                        <viewLayoutGuide key="safeArea" id="6oa-Gd-eJ2"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4r-ou-rgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,6 +265,6 @@
     <resources>
         <image name="back" width="158" height="224"/>
         <image name="background" width="736" height="414"/>
-        <image name="card1" width="93" height="132"/>
+        <image name="card1" width="158" height="224"/>
     </resources>
 </document>
